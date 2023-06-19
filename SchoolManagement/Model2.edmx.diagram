@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4171030bfda9451799aa4d40eb83710c" Name="Diagram1">
+        <EntityTypeShape EntityType="SupermarketInfoModel.Category" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Customer" Width="1.5" PointX="1.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Employee" Width="1.5" PointX="3.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Indent" Width="1.5" PointX="6" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Inventory" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.OrderDetail" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Payment" Width="1.5" PointX="3.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Product" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.PurchaseOrder" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Purchasing" Width="1.5" PointX="11.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketInfoModel.Supplier" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="SupermarketInfoModel.fkPaymentCustomer_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkIndentEmployee_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkPurchaseOrderEmployee_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkIndentPayment_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkOrderDetailOrder_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkstock_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkOrderDetailProduct_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkProductSupplier_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkPurchasingProduct_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkPurchaseOrderSupplier_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.fkPurchasingPurchaseOrder_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketInfoModel.ProductCategory" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

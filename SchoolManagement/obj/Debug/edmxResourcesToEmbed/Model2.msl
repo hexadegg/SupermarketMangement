@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SupermarketInfoModelStoreContainer" CdmEntityContainer="SupermarketInfoEntities9">
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Classification_Standard" ColumnName="Classification_Standard" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Employee_Name" ColumnName="Employee_Name" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Employee_Email" ColumnName="Employee_Email" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indent">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Indent">
+        <MappingFragment StoreEntitySet="Indent">
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="TotalOrder_Money" ColumnName="TotalOrder_Money" />
+          <ScalarProperty Name="Order_Date" ColumnName="Order_Date" />
+          <ScalarProperty Name="Payment_ID" ColumnName="Payment_ID" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventory">
+          <ScalarProperty Name="stock_ID" ColumnName="stock_ID" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Inventory_Date" ColumnName="Inventory_Date" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetail">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="Detail_ID" ColumnName="Detail_ID" />
+          <ScalarProperty Name="Unit_Price" ColumnName="Unit_Price" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="Payment_ID" ColumnName="Payment_ID" />
+          <ScalarProperty Name="Payment_Method" ColumnName="Payment_Method" />
+          <ScalarProperty Name="Payment_Money" ColumnName="Payment_Money" />
+          <ScalarProperty Name="Payment_Time" ColumnName="Payment_Time" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Discount_Info" ColumnName="Discount_Info" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Selling_Price" ColumnName="Selling_Price" />
+          <ScalarProperty Name="Depict" ColumnName="Depict" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="stock_ID" ColumnName="stock_ID" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrder">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.PurchaseOrder">
+        <MappingFragment StoreEntitySet="PurchaseOrder">
+          <ScalarProperty Name="PurchaseOrder_ID" ColumnName="PurchaseOrder_ID" />
+          <ScalarProperty Name="TotalPurchase_Price" ColumnName="TotalPurchase_Price" />
+          <ScalarProperty Name="Purchase_Date" ColumnName="Purchase_Date" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Purchasing">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Purchasing">
+        <MappingFragment StoreEntitySet="Purchasing">
+          <ScalarProperty Name="Detail_ID" ColumnName="Detail_ID" />
+          <ScalarProperty Name="Purchasing_Quantity" ColumnName="Purchasing_Quantity" />
+          <ScalarProperty Name="Purchasing_Price" ColumnName="Purchasing_Price" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="PurchaseOrder_ID" ColumnName="PurchaseOrder_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier">
+      <EntityTypeMapping TypeName="SupermarketInfoModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Supplier_Phone" ColumnName="Supplier_Phone" />
+          <ScalarProperty Name="Supplier_Name" ColumnName="Supplier_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ProductCategory" TypeName="SupermarketInfoModel.ProductCategory" StoreEntitySet="ProductCategory">
+      <EndProperty Name="Category">
+        <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="prcProductCategory" FunctionName="SupermarketInfoModel.Store.prcProductCategory" />
+    <FunctionImportMapping FunctionImportName="prcQuantity" FunctionName="SupermarketInfoModel.Store.prcQuantity" />
+    <FunctionImportMapping FunctionImportName="prcValidateUser" FunctionName="SupermarketInfoModel.Store.prcValidateUser" />
+  </EntityContainerMapping>
+</Mapping>
